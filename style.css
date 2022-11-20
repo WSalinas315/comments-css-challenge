@@ -96,6 +96,11 @@ body{
     padding-right: 20px;
 }
 
+.delete-btn:hover{
+    color: #e39d9f;
+    cursor: pointer;
+}
+
 .reply-btn{
     display: flex;
     justify-content: flex-end;
@@ -105,12 +110,23 @@ body{
     flex-grow: 10;
 }
 
+.reply-btn:hover{
+    color: #C5C6EF;
+    cursor: pointer;
+}
+
 .edit-btn{
     display: flex;
     justify-content: flex-end;
     color: hsl(228, 45%, 44%);
     font-weight: bold;
     align-items: center;
+}
+
+.edit-btn:hover{
+    color: #C5C6EF;
+    cursor: pointer;
+
 }
 
 .reply-arrow{
@@ -140,6 +156,34 @@ body{
     flex-direction: column;
     gap: 10px;
 }
+
+/*.upvote:hover{
+    cursor: pointer;
+}
+
+.downvote:hover{
+    cursor: pointer;
+}
+
+.downvote:hover{
+    cursor: pointer;
+} */
+
+.filter-blue:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(38%) sepia(26%) saturate(1229%) hue-rotate(200deg);
+}
+
+.filter-grey:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(89%) sepia(4%) saturate(4704%) hue-rotate(191deg);
+}
+
+.filter-red:hover{
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(96%) sepia(99%) saturate(1640%) hue-rotate(287deg);
+}
+
 
 footer {
     position: fixed;
