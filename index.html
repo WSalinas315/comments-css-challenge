@@ -10,8 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="./jquery.js"></script>
   <script src="./client.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <title>CSS Challenge | Interactive comments section</title>
   <link rel="stylesheet" href="style.css"/>
@@ -22,59 +20,178 @@
   </style>
 </head>
 <body>
-  <div class="table-responsive">
-    <table class="grid">
-      <tbody>
-        <tr>
-          <td colspan="3"></td>
-          <td colspan="6">
-          <!-- Comment #1 -->
-            <!-- <div> -->
-              12
-              <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-              amyrobson 
-              1 month ago
-              Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-            <!-- </div> -->
-          </td>
-          <td colspan="3"></td>
-        </tr>
-          <!-- Comment #2 -->
-          <div>
-            5
-            <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-            maxblagun 
-            2 weeks ago
-            Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+  <!--Overall container for comments-->
+  <div class="comment-section">
+    
+    <!-- Comment 1 -->
+    <div class="comment">
+      <!-- Voting box-->
+      <div class="voting">
+        <div>
+          <img src="./images/icon-plus.svg" />
+        </div>
+        <!-- Rating score -->
+        <div>
+          12
+        </div>
+        <div>
+          <img src="./images/icon-minus.svg" />
+        </div>
+      </div>
+      <!-- Comment-Content box -->
+      <div class="comment-content">
+        <!-- Info-Line box-->
+        <div class="info-line">
+          <!--User Info Area -->
+          <div class="user-info">
+            <!-- Profile-Pic image -->
+            <div><img class="profile-pic" src="./images/avatars/image-amyrobson.png" alt="profile" /></div>
+            <!-- Username -->
+            <div class="username">amyrobson</div> 
+            <!-- Post-Date -->
+            <div class="post-date">1 month ago</div>
           </div>
+          <!-- Reply button -->
+          <div class="reply-btn"><img class="reply-arrow" src="./images/icon-reply.svg" />Reply</div>
+        </div>
+        <!-- Text-Content box -->
+        <div class="text-content">
+          Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+        </div>
+      </div>
+    </div>
+    
+    <!-- Comment 2 -->
+    <div class="comment">
+      <!-- Voting box-->
+      <div class="voting">
+        <div>
+          <img src="./images/icon-plus.svg" />
+        </div>
+        <!-- Rating score -->
+        <div>
+          5
+        </div>
+        <div>
+          <img src="./images/icon-minus.svg" />
+        </div>
+      </div>
+      <!-- Comment-Content box -->
+      <div class="comment-content">
+        <!-- Info-Line box-->
+        <div class="info-line">
+          <!--User Info Area -->
+          <div class="user-info">
+            <!-- Profile-Pic image -->
+            <div><img class="profile-pic" src="./images/avatars/image-maxblagun.png" alt="profile" /></div>
+            <!-- Username -->
+            <div class="username">maxblagun</div> 
+            <!-- Post-Date -->
+            <div class="post-date">2 weeks ago</div>
+          </div>
+          <!-- Reply button -->
+          <div class="reply-btn"><img class="reply-arrow" src="./images/icon-reply.svg" />Reply</div>
+        </div>
+        <!-- Text-Content box -->
+        <div class="text-content">
+          Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+        </div>
+      </div>
+    </div>
 
+    <!-- Reply Thread Starts Here -->
+    <div class="reply-thread">
+      <div class="reply-line"></div>
+      <!-- Reply Posts Container -->
+      <div class="reply-posts">
+        <!-- Comment #3 (Reply to comment #2) -->
+        <div class="reply">
+          <!-- Voting box-->
+          <div class="voting">
+            <div>
+              <img src="./images/icon-plus.svg" />
+            </div>
+            <!-- Rating score -->
+            <div>
+              4
+            </div>
+            <div>
+              <img src="./images/icon-minus.svg" />
+            </div>
+          </div>
+          <!-- Comment-Content box -->
+          <div class="comment-content">
+            <!-- Info-Line box-->
+            <div class="info-line">
+              <!--User Info Area -->
+              <div class="user-info">
+                <!-- Profile-Pic image -->
+                <div><img class="profile-pic" src="./images/avatars/image-ramsesmiron.png" alt="profile" /></div>
+                <!-- Username -->
+                <div class="username">ramsesmiron</div> 
+                <!-- Post-Date -->
+                <div class="post-date">1 week ago</div>
+              </div>
+              <!-- Reply button -->
+              <div class="reply-btn"><img class="reply-arrow" src="./images/icon-reply.svg" />Reply</div>
+            </div>
+            <!-- Text-Content box -->
+            <div class="text-content">
+              <span style="color: hsl(228, 45%, 44%); font-weight: bold">@maxblagun</span> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
+            </div>
+          </div>
+        </div>
 
-          <!-- Comment #3 (Reply to comment #2) -->
-          <!-- <div>
-            4
-            <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-            ramsesmiron 
-            1 week ago
-            @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-          </div> -->
-
-
-          <!-- Comment #4 (Reply to comment #2) -->
-          <!-- <div>
-            2
-            <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-            juliusomo 
-            2 days ago
-            @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-          </div> -->
-
-
-      </tbody>
-    </table>
-  </div> 
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+        <!-- Comment #4 (Reply to comment #2) -->
+        <div class="reply">
+          <!-- Voting box-->
+          <div class="voting">
+            <div>
+              <img src="./images/icon-plus.svg" />
+            </div>
+            <!-- Rating score -->
+            <div>
+              2
+            </div>
+            <div>
+              <img src="./images/icon-minus.svg" />
+            </div>
+          </div>
+          <!-- Comment-Content box -->
+          <div class="comment-content">
+            <!-- Info-Line box-->
+            <div class="info-line">
+              <!--User Info Area -->
+              <div class="user-info">
+                <!-- Profile-Pic image -->
+                <div><img class="profile-pic" src="./images/avatars/image-juliusomo.png" alt="profile" /></div>
+                <!-- Username -->
+                <div class="username">juliusomo</div>
+                <!-- YOU box-->
+                <div class="you-box">you</div>
+                <!-- Post-Date -->
+                <div class="post-date">2 days ago</div>
+              </div>
+              <!-- Delete button -->
+              <div class="delete-btn"><img class="trash-img" src="./images/icon-delete.svg" />Delete</div>
+              <!-- Edit button -->
+              <div class="edit-btn"><img class="edit-pencil" src="./images/icon-edit.svg" />Edit</div>
+            </div>
+            <!-- Text-Content box -->
+            <div class="text-content">
+              <span style="color: hsl(228, 45%, 44%); font-weight: bold">@ramsesmiron</span> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
+            </div>
+          </div>
+        </div>
+      </div> 
+    </div>
   </div>
+
+  <footer>
+    <div class="attribution">
+      Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </footer>
 </body>
 </html>
