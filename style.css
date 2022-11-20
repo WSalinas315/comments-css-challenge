@@ -126,7 +126,6 @@ body{
 .edit-btn:hover{
     color: #C5C6EF;
     cursor: pointer;
-
 }
 
 .reply-arrow{
@@ -182,6 +181,44 @@ body{
 .filter-red:hover{
     cursor: pointer;
     filter: brightness(0) saturate(100%) invert(96%) sepia(99%) saturate(1640%) hue-rotate(287deg);
+}
+
+.submit-post{
+    display:flex;
+    background-color: white;
+    gap: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    width: 95%;
+}
+
+.submit-pic{
+    width: 40px;
+    height: 40px;
+}
+
+.input-field{
+    flex-grow: 1;
+    height: 75px;
+    border-radius: 5px;
+    padding: 15px 20px;
+    border: 1px solid hsl(223,19%,93%);
+}
+
+.submit-btn{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: hsl(228, 45%, 44%);
+    color: white;
+    height: 42px;
+    width: 85px;
+}
+
+.submit-btn:hover{
+    background-color: #C5C6EF;
+    cursor: pointer;
 }
 
 
